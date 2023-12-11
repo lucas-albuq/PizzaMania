@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="../css/pizzamania.css">
     <title>Header</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="header1">
+            <h1>Pizza<span>Mania</span>.</h1>
+            <div class="header1_menus">
+                <nav>
+                    <ul>
+                        <li><a href="#">Cardápio</a></li>
+                        <li><a href="#">Unidades</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <button onclick="FazerPedido()">
+                    Faça já seu pedido
+                </button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="header2">
+            <div class="endereco">
+                <i class="fi fi-rr-home"></i>
+                <p>Endereço Cadastrado: João Clímaco do Nascimento, 212</p>
+            </div>
+            <div class="carrinho">
+                <i class="fi fi-rr-shopping-cart"></i>
+                <div class="valor">
+                    <p>R$ 0,00</p>
+                    <p>0 itens</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </header>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
