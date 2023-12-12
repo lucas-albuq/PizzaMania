@@ -4,6 +4,7 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: Inter;
+    box-sizing: border-box;
 }
 header{
     display: flex;
@@ -14,30 +15,61 @@ header{
     display: flex;
     max-width: 80em;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding: .6em 0;
 }
 .header1 h1{
     color: #FF5151;
 }
 .header1 h1 span{
     color: #000;
-}
+}   
 .header1_menus{
     display: flex;
+    gap: 1.5em;
+}
+.header1 nav{
+    display: flex;
+    align-items: center;
 }
 .header1 ul{
     display: flex;
     list-style-type: none;
     align-items: center;
     justify-content: center;
+    gap: 1.5em;
+    align-items: center;
 }
-.header1 ul li{
-    padding: 1em 2em;
+.header1 a{
+    text-decoration: none;
+    color: #4F4F4F;
 }
 .header1 button{
-    padding: 1em 2em;
+    padding: .8em 2.5em;
+    border-radius: 5px;
+    line-height: initial;
+    align-self: center;
+    background-color: #FF5151;
+    border: none;
+    color: #FFF;
 }
 .divider{
-    border: 1px solid #BFBFBF;
+    border-bottom: 2px solid #BFBFBF;
     width: 100%;
+}
+.header2 .endereco, .header2 .carrinho{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.header2 .carrinho{
+    border-left: 2px solid #bfbfbf;
+    padding-left: 1em;
+}
+.fi, .header2 span, .carrinho p{
+    color: #FF5151;
+}   
+.header2 span, .carrinho p:first-child{
+    font-weight: 600;
 }
