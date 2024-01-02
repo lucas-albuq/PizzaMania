@@ -25,6 +25,11 @@ header {
   align-items: center;
 }
 
+main{
+  max-width: 80em;
+  margin: 0 auto;
+}
+
 .header1, .header2 {
   display: flex;
   max-width: 80em;

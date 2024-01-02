@@ -1,11 +1,20 @@
-$(document).ready(function() {
-    $('#header').load('/assets/html/header.html', function() {
-        const fazerPedido = document.querySelector(".header1_menus button");
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
 
-        fazerPedido.addEventListener("click", () => window.open('/assets/pages/cardapio.html', '_self'));
-    });
-});
+    fetch('/assets/html/header.html')
+        .then(response => response.text())
+        .then(data => {
+            header.innerHTML = data;
 
-$(document).ready(function() {
-    $('#footer').load('/assets/html/footer.html');
+            const fazerPedido = document.querySelector(".header1_menus button");
+            fazerPedido.addEventListener("click", () => window.open('/assets/pages/cardapio.html', '_self'));
+        });
+
+    // Carregar o footer
+    fetch('/assets/html/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            footer.innerHTML = data;
+        });
 });
