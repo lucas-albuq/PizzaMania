@@ -142,3 +142,78 @@ header {
 .header2 span, .carrinho p:first-child {
   font-weight: 600;
 }
+
+footer{
+  background-color: var(--primary-color);
+}
+footer .footer{
+  display: flex;
+  max-width: 80em;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0; 
+}
+.footer .footer-menu{
+  width: 40%;
+}
+.footer .footer-menu ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.footer .footer-menu a{
+  color: var(--background-color);
+  text-decoration: none;
+  transition: color .2s
+}
+.footer-menu a:hover{
+  color: var(--divider-color)
+}
+.footer-logo-copy, .footer-social-medias{
+  width: 20%;
+}
+.footer-social-medias{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.footer-social-medias a{
+  text-decoration: none;
+}
+.footer-social-medias div {
+  color: var(--background-color);
+  font-size: 1.2rem;
+  padding: 1em;
+  transition: all .5s ease;
+}
+
+.footer-social-medias div:hover {
+  transform: translateY(-5px);
+}
+.footer-social-medias div::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  margin-top: 3px;
+  border-radius: 5px;
+  background: var(--background-color);
+  transition: all .2s ease;
+}
+.footer-social-medias div:hover::after{
+  width: 100%;
+}
+.footer-logo-copy{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  color: var(--background-color)
+}
+.footer-logo-copy a{
+  color: var(--background-color);
+  text-decoration: none;
+}
+.footer-logo-copy a span{
+  color: var(--secondary-color);
+}
