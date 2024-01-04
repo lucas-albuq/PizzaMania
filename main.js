@@ -8,10 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
             header.innerHTML = data;
 
             const fazerPedido = document.querySelector(".header1_menus button");
-            fazerPedido.addEventListener("click", () => window.open('/assets/pages/cardapio.html', '_self'));
+            fazerPedido.addEventListener("click", () => window.open('./assets/pages/cardapio.html', '_self'));
         });
 
-    // Carregar o footer
     fetch('/assets/html/footer.html')
         .then(response => response.text())
         .then(data => {
