@@ -267,11 +267,14 @@ footer .footer{
 .servicos img{
   height: 3.5em;
 }
-
+.unidades, .sobre{
+  min-height: 55vh;
+}
 .unidades{
   display: flex;
   flex-direction: column;
   gap: 2em;
+  
 }
 
 .unidades img{
@@ -466,4 +469,78 @@ footer .footer{
 }
 .sobre{
   width: 50%;
+}
+#contato{
+  flex-direction: row;
+}
+.formulario-contato{
+  width: 45%;
+}
+.faq-contato{
+  width: 45%;
+}
+.formulario-contato form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#submit{
+  width: 20%;
+  cursor: pointer;
+  padding: .8em 0em;
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: .9rem;
+  text-align: center;
+  transition: background .2s ease;
+}
+#submit:hover{
+  background-color: var(--button-hover-background);
+}
+.inputUser{
+  font-size: .9rem;
+  padding: .8em 1.2em;
+  border-radius: 5px;
+  border: 1px solid var(--divider-color);
+  width: 100%;
+}
+textarea.inputUser{
+  min-height: 18em;
+}
+.inputUser::placeholder{
+  font-size: 1rem;
+  color: var(--divider-color);
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.question{
+  width: 100%;
+  border: 1px solid var(--divider-color);
+  transition: all .2s ease;
+  padding: .8em 1.2em;
+  border-radius: 5px;
+}
+.not-visible p{
+  display: none;
+}
+.visible p{
+  margin-top: 1em;
+}
+.titulo{
+  display: flex;
+  gap: 2em;
+  cursor: pointer;
+}
+.question img{
+  transition: all .2s;
+}
+.visible img{
+  transform: rotate(180deg);
 }
