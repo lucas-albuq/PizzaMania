@@ -546,3 +546,52 @@ textarea.inputUser{
 .visible img{
   transform: rotate(180deg);
 }
+.cards-pizzas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.card-pizza{
+  width: 48%;
+  display: flex;
+  padding: 2em;
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+}
+.card-left{
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-left-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.card-right{
+  width: 42%;
+}
+.card-right img{
+  width: 100%;
+}
+.card-left-button button{
+  border: none;
+  background: var(--button-background);
+  padding: .8em 4em;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+  margin-top: .8em;
+}
+.card-left-button button:hover{
+  background: var(--button-hover-background)
+}
+.card-left-button p span{
+  font-weight: bold;
+  font-size: 1.2em;
+}

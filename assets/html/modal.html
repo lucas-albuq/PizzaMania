@@ -1,0 +1,45 @@
+<!--Depois eu faço 😁-->
+
+<div class="modal">
+    <div class="modal-titulo">
+        <div>
+            <img src="/assets/images/pizza-redonda.png" alt="Pizza redonda">
+        </div>
+        <div>
+            <h2>Pizza Frango com Catupiry</h2>
+            <p>Massa especial, molho de tomate, mussarela, frango desfiado, catupiry</p>
+        </div>
+    </div>
+    <form action="">
+        <div class="tamanho">
+            <label for="">Tamanho:</label>
+            <input type="checkbox" name="P" id="P" class="check" onclick="selecaoUnica(this)">
+            <label for="P">P (4 fatias)</label>
+            <input type="checkbox" name="M" id="M" class="check" onclick="selecaoUnica(this)">
+            <label for="M">M (6 fatias)</label>
+            <input type="checkbox" name="G" id="G" class="check" onclick="selecaoUnica(this)">
+            <label for="G">G (8 fatias)</label>
+            <input type="checkbox" name="GG" id="GG" class="check" onclick="selecaoUnica(this)">
+            <label for="GG">GG (12 fatias)</label>
+        </div>
+        <div class="observacoes">
+            <label for="">Observações:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="submit">
+            <input type="number" name="quantidade" id="">
+            <input type="submit" value="Adicionar ao carrinho">
+        </div>
+    </form>
+</div>
+<script>
+    function selecaoUnica(clickedCheckbox) {
+        var checkboxes = document.querySelectorAll(".check");
+    
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox !== clickedCheckbox) {
+            checkbox.checked = false;
+            }
+        });
+        }
+</script>
