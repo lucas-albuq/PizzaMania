@@ -394,22 +394,15 @@ footer .footer{
   background-position: center;
   background-repeat: no-repeat;
   aspect-ratio: 16/5;
-  transition: all .2s;
 }
 .categorias-cardapio a{
   text-decoration: none;
   flex: 0 0 48%;
 }
 
-.categorias-cardapio h2{
-  transition: all .2s;
-}
 
 .categorias-cardapio a:hover h2{
-  font-size: 1.5em
-}
-.categorias-cardapio a:hover div{
-  background-size: 130% auto;
+  font-size: 2em
 }
 
 .categorias-cardapio .milkshakes{

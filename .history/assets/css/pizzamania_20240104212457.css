@@ -377,72 +377,56 @@ footer .footer{
   clip-path: circle();
   margin-right: 0.5rem;
 }
-.categorias-cardapio{
+.categorias-cardapio {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
   justify-content: space-between;
 }
-.categorias-cardapio div{
-  text-align: center;
+
+.categorias-cardapio a {
+  text-decoration: none;
+  flex: 0 0 48%;
+  position: relative;
+  overflow: hidden; /* Garante que o overflow seja escondido para não afetar o efeito do filtro ao passar o mouse */
+}
+
+.categorias-cardapio a::before {
+  content: "";
+  display: block;
+  width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   aspect-ratio: 16/5;
-  transition: all .2s;
-}
-.categorias-cardapio a{
-  text-decoration: none;
-  flex: 0 0 48%;
-}
-
-.categorias-cardapio h2{
-  transition: all .2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(100%); /* Define o filtro inicial para o pseudo-elemento */
+  transition: filter 0.3s ease; /* Adiciona uma transição suave ao filtro */
 }
 
-.categorias-cardapio a:hover h2{
-  font-size: 1.5em
-}
-.categorias-cardapio a:hover div{
-  background-size: 130% auto;
+.categorias-cardapio a:hover::before {
+  filter: brightness(60%); /* Aplica o filtro de brilho ao passar o mouse */
 }
 
-.categorias-cardapio .milkshakes{
+.categorias-cardapio .milkshakes::before {
   background-image: url("/assets/images/Milkshakes.png");
-  
-}
-.categorias-cardapio .milkshakes h2{
-  color: #904737;
 }
 
-.categorias-cardapio .pizzas-salgadas{
+.categorias-cardapio .pizzas-salgadas::before {
   background-image: url("/assets/images/pizzasSalgadas.png");
 }
 
-.categorias-cardapio .sobremesas h2{
-  color: #66391F;
-}
-
-.categorias-cardapio .sobremesas{
+.categorias-cardapio .sobremesas::before {
   background-image: url("/assets/images/sobremesas.png");
 }
-.categorias-cardapio .pizzas-doces{
+
+.categorias-cardapio .pizzas-doces::before {
   background-image: url("/assets/images/pizzasDoces.png");
 }
 
-.categorias-cardapio .pizzas-doces h2{
-  color: #FFEAD6;
-}
-
-.categorias-cardapio .bebidas{
+.categorias-cardapio .bebidas::before {
   background-image: url("/assets/images/bebidas.png");
-}
-
-.categorias-cardapio .bebidas h2{
-  color: #7A5C1A;
 }
