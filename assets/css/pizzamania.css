@@ -246,11 +246,11 @@ footer .footer{
 .footer-logo-copy a span{
   color: var(--secondary-color);
 }
-.servicos > div{
+.servicos > div, .unidades > div{
   display: flex;
   justify-content: space-between;
 }
-.servicos > div > div{
+.servicos > div > div, .unidades > div > div{
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
@@ -267,7 +267,17 @@ footer .footer{
   height: 3.5em;
 }
 
-.servicos p{
+.unidades{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.unidades img{
+  clip-path: circle();
+  height: 8em;
+}
+.servicos p, .unidades p{
   text-align: center;
 }
 
