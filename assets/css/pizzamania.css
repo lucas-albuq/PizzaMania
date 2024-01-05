@@ -508,6 +508,8 @@ footer .footer{
 }
 textarea.inputUser{
   min-height: 18em;
+  min-width: 100%; 
+  max-width: 100%;
 }
 .inputUser::placeholder{
   font-size: 1rem;
