@@ -460,10 +460,5 @@ footer .footer{
 
 #sobre{
   background-image: url("/assets/images/background-pizza.png");
-  background-size: 100% auto;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-.sobre{
-  width: 50%;
+  background-size: auto 80%;
 }
